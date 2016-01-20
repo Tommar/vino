@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>BT Advanced Parallax Background</name>
+	<author>BowThemes</author>
+	<creationDate>November 2014</creationDate>
+	<copyright>Copyright © 2014 Bow Themes</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>http://bowthemes.com</authorUrl>
+	<version>1.0.1</version>
+	<description>
+        <![CDATA[
+		<div class="bt_description">
+			<h3>Module BT Advanced Parallax Background version 1.0.1</h3>
+			<a href="http://bowthemes.com" target="_blank"><img src="../modules/mod_bt_apb/admin/images/icon.png" alt="BT Parallax Vision"></a>
+			<p align="justify">
+                BT Advanced Parallax Background is combined module. It helps you display a module with dynamic video or image background and play image gallery with only one click.
+			</p>
+			<br clear="both" />
+			<h3>Extension features:</h3>
+			<ul class="list-style">
+				<li>Support parallax video/image background</li>
+				<li>Play images gallery, embed video, HTML 5 video in fullscreen</li>
+				<li>Support get images from Flickr, Picasa, Joomla folder, Phoca and JoomGallery components</li>
+				<li>Support Drag and Drop images to upload</li>
+				<li>Custom module's content and show/hide content effect</li>
+				<li>Compatible with Joomla 2.5+ and Joomla 3.x+</li>
+				<li>Support browsers: IE9+, Firefox, Chrome ...</li>
+			</ul>
+			<h3>Upgrade versions</h3>
+			<p>
+				Your current versions is BT Advanced Parallax Background 1.0.1. <a target="_blank" href="http://bowthemes.com/showcase/joomla-extensions.html">Find our latest versions now</a>
+			</p>
+			<h3>About Bow Themes & copyright</h3>	
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright (C) 2012 BowThemes	
+		</div>
+		<style>
+			.bt_description{
+				text-align: left;
+			}
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 10px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				padding: 5px 5px 5px 30px;
+				list-style: none outside none;
+			}
+
+			.bt_description ul.list-style li{
+				background:url(../modules/mod_bt_apb/admin/images/tick.png) 0px 6px no-repeat;
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+	]]>
+	</description>
+	<files>
+		<filename module="mod_bt_apb">mod_bt_apb.php</filename>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<folder>helpers</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_bt_apb.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="BASIC_CONFIGURATION" >
+				<field type="text" name="module_width" default="" label="MODULE_WIDTH" description="MODULE_WIDTH_DESC"/>
+				<field type="text" name="module_height" default="300" label="MODULE_HEIGHT" description="MODULE_HEIGHT_DESC"/>
+				<field type="list" name="background_type" default="image" label="background_type" description="background_type_desc">
+					<option value="image">IMAGE</option>
+					<option value="video">VIDEO</option>
+				</field>
+				<field type="list" name="parallax_type" default="dynamic" label="PARALLAX_TYPE" description="PARALLAX_TYPE_DESC">
+					<option value="static">STATIC</option>
+					<option value="dynamic">DYNAMIC</option>
+				</field>
+				<field type="media" name="background_image" label="BACKGROUND_IMAGE" description="BACKGROUND_IMAGE_DESC"/>
+				<field type="text" name="background_video" label="BACKGROUND_VIDEO" description="BACKGROUND_VIDEO_DESC" size="50"/>
+				<field type="textured" name="background_textured" label="BACKGROUND_TEXTURED" description="BACKGROUND_TEXTURED_DESC"/>
+				<field type="text" class="bt_color" name="textured_color" label="TEXTURED_COLOR" description="TEXTURED_COLOR_DESC"/>
+				<field type="text" name="textured_opacity" default="0.7" label="TEXTURED_OPACITY" description="TEXTURED_OPACITY_DESC"/>
+				<field type="text" name="speed_factor" default="0.5" label="SPEED_FACTOR" description="SPEED_FACTOR_DESC"/>
+				<field type="spacer" name="content_separator" label="CONTENT_SETTING"/>
+				<field type="text" name="content_width" label="CONTENT_WIDTH" descripition="CONTENT_WIDTH_DESC"/>
+				<field type="text" name="heading_text" default="BT Advanced Parallax Background" label="HEADING_TEXT" description="HEADING_TEXT_DESC" filter="raw"/>
+				<field type="textarea" rows="5"  cols="50" name="sub_text" label="SUB_TEXT" description="SUB_TEXT_DESC" 
+					default="" filter="raw"/>
+				<field type="text" name="button_text" label="BUTTON_TEXT" description="BUTTON_TEXT" default="Open Gallery"/>
+				<field type="list" name="content_effect" label="CONTENT_EFFECT" description="CONTENT_EFFECT_DESC" default="fade">
+					<option value="fade">FADE</option>
+					<option value="slide_top">SLIDE_TOP</option>
+					<option value="slide_bottom">SLIDE_BOTTOM</option>
+					<option value="slide_left">SLIDE_LEFT</option>
+					<option value="slide_right">SLIDE_RIGHT</option>
+				</field>
+				
+				<field type="textarea" name="content_custom_effect" label="CONTENT_CUSTOM_EFFECT" description="CONTENT_CUSTOM_EFFECT_DESC" cols="50" rows="5"/>
+			</fieldset>
+			
+			<fieldset name="gallery_manager" label="GALLERY_MANAGER">
+				<field name="warning" type="warning" label="Warning" />
+				<field name="gallery_type" type="list" default="image"  class="gallery-type" label="GALLERY_TYPE" descripition="GALLERY_TYPE_DESC">
+					<option value="image">IMAGE</option>
+					<option value="video">VIDEO</option>
+					<!--<option value="content">CONTENT</option>
+					<option value="virtuemart">VIRTUEMART</option>-->
+				</field>
+				<field name="source" type="list" class="bt_control gallery-type-image" default="upload"
+					label="SOURCE_LABEL" description="SOURCE_DESC">
+					<option value="jfolder">Joomla Folder</option>
+					<option value="flickr">Flickr</option>
+					<option value="picasa">Picasa</option>
+					<option value="jgallery">Joom Gallery</option>
+					<option value="phocagallery">Phoca Gallery</option>
+					<option value="upload">Uploader</option>
+				</field>
+				<field name="video_source" type="list" class="bt_control gallery-type-video" default="youtube" label="VIDEO_SOURCE" descripition="VIDEO_SOURCE_DESC">
+					<option value="embed">EMBED</option>
+					<option value="html5">HTML5_VIDEO_LABEL</option>
+				</field>
+				<field class="gallery-option source_jfolder" name="jfolder_path" type="folder" label="JFOLDER_LABEL" description="JFOLDER_DESC" />
+
+				<field class="gallery-option source_flickr" type="text" name="flickr_userid" size="36" label="FLICKR_USERID_LABEL" description="FLICKR_USERID_DESC" />
+				<field class="gallery-option source_flickr" type="text" name="flickr_api" size="36" label="FLICKR_APIKEY_LABEL" description="FLICKR_APIKEY_DESC" />
+				<field class="gallery-option source_flickr" type="list" name="flickr_photosetid" label="FLICKR_PHOTOSETID_LABEL" description="FLICKR_PHOTOSETID_DESC">
+				</field>
+
+				<field class="gallery-option source_picasa" type="text" name="picasa_userid" size="36" label="PICASA_USERID_LABEL" description="PICASA_USERID_DESC" />
+				<field class="gallery-option source_picasa" type="list" name="picasa_albumid" label="PICASA_ALBUMID_LABEL" description="PICASA_ALBUMID_DESC">
+				</field>
+			
+				<field class="gallery-option source_phocagallery" type="phocagallerycategory" name="phoca_catid" label="PHOCA_CATID_LABEL" description="PHOCA_CATID_DESC">
+				</field>
+				<field class="gallery-option source_jgallery" type="jgallerycategory" name="jgallery_catid" label="JGALLERY_CATID_LABEL" description="JGALLERY_CATID_DESC">
+					<option value="0">JGALLERY_ALL_CATEGORIES</option>
+				</field>
+				
+				<field class="gallery-option video_source_embed" type="textarea" name="embed_video" label="EMBED_VIDEO_LABEL" description="VIDEO_DESC" rows="5" cols="50" filter="raw"/>
+				<field class="gallery-option video_source_html5" type="text" name="html5_video" label="HTML5_VIDEO_LABEL" description="HTML5_VIDEO_DESC" size="50"/>
+				<field class="gallery-option btn-group source_jgallery source_phocagallery source_picasa source_flickr source_jfolder" name="remote_image" type="radio" default="0" label="REMOTE_IMAGE_LABEL" description="REMOTE_IMAGE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="get_limit" type="text" default="20" class="gallery-option source_jgallery source_phocagallery source_picasa source_flickr source_jfolder"
+					label="GET_LIMIT_LABEL"
+					description="GET_LIMIT_DESC" />
+				<field type="fetchimage" name="btnFetchImage" label="FETCHIMAGE_LABEL" class="gallery-option source_jgallery source_phocagallery source_picasa source_flickr source_jfolder"
+					description="FETCHIMAGE_DESC" />
+				<field type="html5upload" name="upload" class="gallery-option source_upload" label="UPLOAD_LABEL" description="UPLOAD_DESC" />
+				<field name="gallery" type="gallery" default="" label="GALLERY_LABEL" description="GALLERY_DESC" />
+				<field class="gallery-option source_upload source_jgallery source_phocagallery source_picasa source_flickr source_jfolder" name="deleteimages" type="deleteimages" label="Delete images" />	
+						
+						
+				<field type="asset" name="asset"
+					addfieldpath="/modules/mod_bt_apb/admin/formfields" path="modules/mod_bt_apb/admin/" />
+                <field type="ajax" name="ajax"/> 		
+			</fieldset>
+			
+			<fieldset name="gallery_configuration" label="GALLERY_CONFIGURATION">
+				<field name="thumbnail_width" type="text" default="200" label="THUMBNAIL_WIDTH" description="THUMBNAIL_WIDTH_DESC" />
+				<field name="thumbnail_height" type="text" default="200" label="THUMBNAIL_HEIGHT" description="THUMBNAIL_HEIGHT_DESC" />
+				<field name="number_rows" type="text" default="2" label="NUMBER_ROWS" description="NUMBER_ROWS_DESC"/>
+				<!--
+				<field name="gallery_appear" type="list" default="fade" label="GALLERY_APPEAR_EFFECT" description="GALLERY_APPEAR_EFFECT_DESC">
+					<option value="fade">FADE</option>
+					<option value="slide_top">SLIDE_TOP</option>
+					<option value="slide_bottom">SLIDE_BOTTOM</option>
+					<option value="slide_left">SLIDE_LEFT</option>
+					<option value="slide_right">SLIDE_RIGHT</option>
+				</field>
+				<field name="gallery_disappear" type="list" default="fade" label="GALLERY_DISAPPEAR_EFFECT" description="GALLERY_DISAPPEAR_EFFECT_DESC">
+					<option value="fade">FADE</option>
+					<option value="slide_top">SLIDE_TOP</option>
+					<option value="slide_bottom">SLIDE_BOTTOM</option>
+					<option value="slide_left">SLIDE_LEFT</option>
+					<option value="slide_right">SLIDE_RIGHT</option>
+				</field>
+				<field type="textarea" name="gallery_custom_effect" label="GALLERY_CUSTOM_EFFECT" description="GALLERY_CUSTOM_EFFECT_DESC" cols="50" rows="5"/>
+				-->
+				
+			</fieldset>
+			
+			<fieldset name="advanced">
+
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+
+			
+		</fields>
+
+	</config>
+
+</extension>

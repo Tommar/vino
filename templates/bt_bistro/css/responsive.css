@@ -1,0 +1,718 @@
+
+
+
+.bt_contact .container::before{
+	right:-27px;
+}
+
+
+
+@media (max-width: 1199px) {
+.bt-category-image {
+    padding-top: 10px;
+}
+h2.bt-item-title {
+	font-size:24px;
+	margin:0 0 15px 0;
+	padding:8px 0 17px 0;
+}
+.narow_space h2.bt-item-title{
+	margin:0 0 8px 0;
+	padding:5px 0 17px 0;
+}
+ul.bt-item-extrafields li + li {
+    margin-top: 7px;
+    padding-top: 10px;
+}
+.bt-item-price {
+    bottom: 12px;
+}
+.bt-item-price span {
+    font-size: 24px;
+    height: 37px;
+    line-height: 33px;
+    padding: 0 20px;
+}
+.sl_big_title span{
+	line-height:80px;
+	font-size:80px;
+}
+.sl_small_title{
+	font-size:54px;
+}
+.sl_desc{
+	font-size:42px;
+}
+
+
+
+.subCategory_listItem .menusItem {
+    margin-bottom: 55px;
+}
+
+.subCategory_headInner2::before, .subCategory_headInner2::after{
+	background-size:90% auto;
+}
+.subCategory_headInner3::before{
+	background-size:auto 85%;
+}
+.subCategory_head, .subCategory_headInner3{
+	height:350px;
+}
+.menus_subCatDescription .menusCatTitle, .menus_subCatTitle{
+	font-size:42px;
+}
+.menus_subCatTitle {
+    padding-top: 55px;
+}
+.menus_subCatDescription{
+	font-size:62px;
+	line-height:38px;
+}
+.bt_contact .container::before{
+	right:0;
+}
+
+.mod_btquickcontact.booking{
+	margin: 230px 100px 0;
+}
+.mod_btquickcontact .btqc-title h3 {
+    font-size: 50px;
+    margin: 35px 0 25px 0;
+}
+.mod_btquickcontact.booking:before{
+	background-size:auto 90%;
+}
+.contactForm_title {
+	font-size:50px;
+}
+.tabSlideInner2::before{
+	width:240px;
+}
+.tabSlideInner2::after{
+	width:380px;
+}
+.tabSlideInner2::before, .tabSlideInner2::after{
+	background-size:100% auto;
+}
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 979px) {
+.bt-bistro-item {
+	width:100%;
+}
+.bt-item-thumbnail{
+	text-align:center;
+}
+.bt-item-thumbnail img{
+	width:100%;
+	height:auto;
+}
+.img_right .bt-bistro-item .bt-item-thumbnail{
+	float:left;
+}
+.img_right .bt-bistro-item .bt-item-summary {
+    left: auto;
+    right: 0;
+}
+.bt-bistro-item:nth-child(2n+1) .bt-item-summary{
+	left: 0;
+    right: auto;
+}
+.bt-bistro-item:nth-child(2n+1) .bt-item-thumbnail,
+.img_right .bt-bistro-item:nth-child(2n+1) .bt-item-summary{
+    float: right;
+}
+.img_right .bt-bistro-item .bt-item-summary:before{
+	border-right: 19px solid #fff;
+    border-left: 19px solid transparent;
+    right: auto;
+    left: -38px;
+}
+.bt-bistro-item:nth-child(2n+1) .bt-item-summary:before,
+.img_right .bt-bistro-item:nth-child(2n+1) .bt-item-summary:before{
+	border-left: 19px solid #fff;
+    border-right: 19px solid transparent;
+    left: auto;
+    right: -38px;
+}
+
+
+
+.subCategory_listItem .menusItem {
+    margin-bottom: 40px;
+}
+.subCategory_headInner2::before, .subCategory_headInner2::after{
+	background-size:80% auto;
+}
+.subCategory_headInner3::before{
+	background-size:auto 60%;
+}
+.subCategory_head, .subCategory_headInner3{
+	height:300px;
+}
+.menus_subCatDescription .menusCatTitle, .menus_subCatTitle{
+	font-size:38px;
+	padding-bottom:0;
+}
+.menus_subCatDescription{
+	font-size:52px;
+	line-height:34px;
+}
+.menus_subCatTitle {
+    padding-top: 45px;
+}
+h3.menusItem_title{
+	font-size:36px;
+}
+.mod_btquickcontact.booking{
+	margin: 230px 50px 0;
+}
+.mod_btquickcontact .btqc-title h3 {
+    font-size: 40px;
+    margin: 30px 0 20px 0;
+}
+.mod_btquickcontact.booking:before{
+	background-size:auto 80%;
+}
+
+.contactFormPage .col-sm-12 + .col-sm-12{
+	padding-top:30px;
+}
+.contactForm_title {
+	font-size:40px;
+}
+.sl_big_title span{
+	line-height:70px;
+	font-size:70px;
+}
+.sl_small_title{
+	font-size:48px;
+}
+.sl_desc{
+	font-size:38px;
+}
+.tabSlideInner2::before{
+	width:215px;
+}
+.tabSlideInner2::after{
+	width:350px;
+}
+
+.tabSlide h3.module-title,
+.art_text h3.module-title{
+	font-size:44px;
+	line-height:42px;
+}
+.tabSlide h3.module-title span.firstText,
+.art_text h3.module-title span.firstText{
+	font-size:48px;
+}
+.bt-apb .parallax-content h1.parallax-content-title {
+    font-size: 30px !important;
+}
+.bt-apb .parallax-content .parallax-content-text {
+    font-size: 26px;
+    line-height: 22px;
+}
+.t3-header{
+	background-size:auto 100%;
+}
+.pageheading_title{
+	font-size:38px;
+}
+.pageheading_desc{
+	font-size:26px;
+}
+.menusLinkItem{
+	font-size:20px;
+	padding:0 10px;
+}
+.menusLinkItem img {
+    max-height: 50px;
+}
+div.catItemHeader h3.catItemTitle, div.tagItemHeader h2.tagItemTitle, 
+div.userItemHeader h3.userItemTitle, div.latestItemHeader h2.latestItemTitle, 
+div.itemHeader h2.itemTitle,h2.itemListView {
+    font-size: 40px;
+}
+.itemViewInfo{
+	font-size:18px;
+}
+
+
+
+}
+
+
+
+
+
+@media (max-width: 767px) {
+body{
+	font-size:22px;
+}
+.col-xs-12 + .col-xs-12{
+	padding-top:30px;
+}
+.subCategory_listItem .menusItem {
+    margin-bottom: 10px;
+}
+.subCategory_headInner2::before, .subCategory_headInner2::after{
+	background-size:65% auto;
+}
+.subCategory_headInner3::before{
+	background-size:auto 80%;
+}
+.menus_subCatTitle {
+    padding-top: 35px;
+}
+h3.menusItem_title{
+	font-size:32px;
+}
+.mod_btquickcontact.booking:before{
+	background-size:auto 70%;
+}
+.mod_btquickcontact.booking .btqc-field-container{
+	width:100%;
+}
+.contactForm_title {
+	font-size:30px;
+}
+.contact_form_field {
+}
+.contactForm .col-xs-12{
+	padding-top:0;
+}
+.sl_big_title span{
+	line-height:60px;
+	font-size:60px;
+}
+.sl_small_title{
+	font-size:44px;
+}
+.sl_desc{
+	font-size:34px;
+}
+.tabSlideInner2::before{
+	width:185px;
+}
+.tabSlideInner2::after{
+	width:300px;
+}
+.tabSlide h3.module-title,
+.art_text h3.module-title{
+	font-size:40px;
+	line-height:38px;
+}
+.tabSlide h3.module-title span.firstText,
+.art_text h3.module-title span.firstText{
+	font-size:44px;
+}
+.bt-apb .parallax-content h1.parallax-content-title {
+    font-size: 26px !important;
+}
+.bt-apb .parallax-content .parallax-content-text {
+    font-size: 22px;
+    line-height: 20px;
+}
+.tabSlide .bt-tabs-panes .bt-tabs-pane{
+	line-height:32px;
+	font-size:16px;
+}
+.testimonial_text {
+    font-size: 30px;
+    line-height: 34px;
+}
+span.menusItemExtraField.price{
+	font-size:20px;
+}
+h3.menusItem_title {
+    font-size: 24px;
+}
+.menusItem_text {
+    font-size: 20px;
+    line-height: 22px;
+}
+.menus_subCatDescription{
+	font-size:38px;
+	line-height:32px;
+}
+
+
+.t3-footer::after{
+	width:250px;
+	background-size:100% auto;
+}
+.menus_subCatDescription{
+	font-size:30px;
+	line-height:26px;
+}
+.module_footer{
+	font-size:18px;
+}
+.pageheading_title{
+	font-size:34px;
+}
+.pageheading_desc{
+	font-size:24px;
+}
+.menusLinkItem{
+	font-size:18px;
+	padding:0 10px;
+	width:110px;
+}
+.menusLinkItem img {
+    max-height: 40px;
+}
+.mainMenuDesktop ul.nav > li > a{
+	font-size:32px;
+	line-height:50px;
+}
+.mainMenuDesktop ul.nav li .dropdown-menu{
+	font-size:12px;
+}
+.mainMenuDesktop ul.nav li ul.dropdown-menu li a {
+    line-height: 32px;
+}
+.mod_btquickcontact.booking{
+	margin-left:0;
+	margin-right:0;
+	padding-left:10px;
+	padding-right:10px;
+}
+.mod_btquickcontact .btqc-title h3 {
+    font-size: 30px;
+    margin: 30px 0 20px 0;
+}
+.btqc-field-container label,
+.mod_btquickcontact .btqc-field-container input[type="text"]{
+	font-size:22px;
+}
+.t3-sl-2 .module-title {
+    font-size: 34px;
+}
+.defaultLayout .lastest_news .readmore{
+	margin-top:10px;
+}
+.defaultLayout .bt-contentshowcase .bt-inner a.bt-title{
+	font-size:24px;
+}
+.defaultLayout .bt-contentshowcase .bt-inner .bt-introtext {
+    font-size: 20px;
+    line-height: 24px;
+}
+.defaultLayout .lastest_news #btcontentshowcase-control {
+    top: -43px;
+}
+
+div.topText{
+	font-size:24px;
+}
+div.acymailing_introtext{
+	font-size:18px;
+}
+div.catItemHeader h3.catItemTitle, div.tagItemHeader h2.tagItemTitle, 
+div.userItemHeader h3.userItemTitle, div.latestItemHeader h2.latestItemTitle, 
+div.itemHeader h2.itemTitle,h2.itemListView {
+    font-size: 34px;
+}
+.avtAuthor{
+	width:70px;
+	height:70px;
+}
+.avtAuthor + .itemViewInner {
+    margin-left: 80px;
+}
+div.catItemIntroText, div.tagItemIntroText, div.userItemIntroText, div.latestItemIntroText {
+    line-height: 26px;
+	font-size:20px;
+}
+div.catItemReadMore a, div.tagItemReadMore a, div.userItemReadMore a, div.latestItemReadMore a, .jContentListView .readmore a{
+	height:36px;
+	padding:0 10px;
+	font-size:20px;
+}
+.itemViewInfo{
+	font-size:16px;
+}
+ul.my-pagination li.page-number .pagenav{
+	font-size:22px;
+}
+div.userBlock h2, .itemAuthorBlock .itemAuthorName,
+div.itemAuthorLatest h3, div.itemRelated h3,
+div.itemCommentsForm h3, .itemCommentList h3.itemCommentsCounter,
+div.items-more h3{
+	font-size:28px;
+}
+div.itemAuthorLatest ul, div.itemRelated ul{
+	font-size:20px;
+}
+div.itemCommentsForm form input#submitCommentButton{
+	font-size:20px;
+}
+.t3-sidebar h3.module-title{
+	font-size:26px;
+}
+.jLoginModule ul{
+	font-size:18px;
+}
+.contact_form_label label, .contact_form_input input[type="text"], 
+.contact_form_input input[type="email"], .contact_form_input textarea{
+    font-size: 22px;
+}
+.contact_form_button button.button{
+	font-size:24px;
+}
+.contactMisc {
+    font-size: 18px;
+}
+
+}
+
+
+
+@media (max-width: 479px) {
+.itemAuthorDescription{
+	font-size:18px;
+}
+.contact_form_label label, .contact_form_input input[type="text"], 
+.contact_form_input input[type="email"], .contact_form_input textarea{
+    font-size: 18px;
+}
+.contactForm{
+	padding-left:10px;
+	padding-right:10px;
+}
+.contactMisc {
+    font-size: 16px;
+}
+.contact_form_button button.button{
+	font-size:20px;
+}
+.contactForm_title {
+	font-size:26px;
+}
+.t3-sidebar h3.module-title{
+	font-size:24px;
+}
+.pageheading_title{
+	max-width:200px;
+}
+ul.my-pagination li.page-number .pagenav{
+	font-size:20px;
+}
+div.itemAuthorLatest ul, div.itemRelated ul{
+	font-size:18px;
+}
+div.userBlock h2, .itemAuthorBlock .itemAuthorName,
+div.itemAuthorLatest h3, div.itemRelated h3,
+div.itemCommentsForm h3, .itemCommentList h3.itemCommentsCounter,
+div.items-more h3{
+	font-size:24px;
+}
+body{
+	font-size:18px;
+}
+.tabSlideInner2::before{
+	width:135px;
+}
+.tabSlideInner2::after{
+	width:215px;
+}
+.subCategory_headInner2::before, .subCategory_headInner2::after{
+	background-size:50% auto;
+}
+
+.sl_big_title span{
+	line-height:38px;
+	font-size:38px;
+	padding:10px 0;
+}
+.sl_small_title{
+	font-size:32px;
+}
+.sl_desc{
+	font-size:26px;
+}
+
+.tabSlide h3.module-title,
+.art_text h3.module-title{
+	font-size:36px;
+	line-height:34px;
+}
+.tabSlide h3.module-title span.firstText,
+.art_text h3.module-title span.firstText{
+	font-size:40px;
+}
+.bt-apb .parallax-content h1.parallax-content-title {
+    font-size: 20px !important;
+	padding-bottom:15px;
+}
+.bt-apb .parallax-content .parallax-content-text {
+    font-size: 16px;
+    line-height: 18px;
+	margin-top:8px;
+}
+.tabSlide .bt-tabs-panes .bt-tabs-pane{
+	line-height:28px;
+	font-size:14px;
+}
+
+.bt-bistro-item .bt-item-thumbnail, .bt-bistro-item .bt-item-summary{
+	width:100%;
+	float:none!important;
+}
+.bt-bistro-item .bt-item-summary{
+	position:relative;
+	left:auto;
+	right:auto;
+	top:auto;
+}
+.bt-item-price{
+	position:relative;
+	margin-top:15px;
+	margin-bottom:15px;
+	bottom:auto!important;
+}
+.bt-bistro-item .bt-item-summary:before{
+	border-right:19px solid transparent!important;
+	border-bottom:19px solid #fff!important;
+	border-left:19px solid transparent!important;
+	border-top:19px solid transparent!important;
+	content:'';
+	position:absolute;
+	left:calc(50% - 10px)!important;
+	top:-38px!important;
+	right:auto!important;
+}
+.bt-item-summary .bt-item-extrafields{
+	font-size:22px;
+}
+.bt-item-price span {
+    font-size: 22px;
+    height: 35px;
+    line-height: 31px;
+    padding: 0 15px;
+}
+.testimonial_text {
+    font-size: 22px;
+    line-height: 30px;
+}
+.testimonial_users img{
+	width:60px;
+	height:60px;
+	border:2px solid #e6e6e6 !important
+}
+.testimonial_name1, .testimonial_name2 {
+    font-size: 24px;
+	font-weight:normal;
+	padding:5px 0;
+}
+
+.parallaxContentInner{
+	width:290px;
+	height:290px;
+	padding:20px;
+}
+.bt-apb{
+	height:410px!important;
+}
+.parallaxAnimate .parallax-content .container::after{
+	background:none;
+	display:none;
+}
+.bt-apb .parallax-content .button {
+    font-size: 20px;
+    height: 34px;
+    line-height: 32px;
+    margin-top: 12px;
+    padding: 0 15px;
+}
+.parallaxContentInner::before {
+    background-size: 100% auto;
+    height: 319px;
+    left: 250px;
+    top: -13px;
+    width: 315px;
+}
+.bt-apb .parallaxContentInner::before {
+    transform: translateX(-270px);
+}
+.t3-footer::after{
+	width:250px;
+	background-size:100% auto;
+}
+.menus_subCatDescription{
+	font-size:30px;
+	line-height:26px;
+}
+.pageheading_title{
+	font-size:30px;
+}
+.pageheading_desc{
+	font-size:22px;
+}
+.menusLinkItem{
+	font-size:16px;
+	padding:0 10px;
+	width:80px;
+}
+.menusLinkItem img {
+    max-height: 30px;
+}
+.mainMenuDesktop ul.nav > li > a{
+	font-size:26px;
+	line-height:40px;
+}
+.mainMenuDesktop ul.nav li ul.dropdown-menu li a {
+    line-height: 28px;
+}
+.t3-sl-2 .module-title {
+    font-size: 30px;
+}
+.mod_btquickcontact .btqc-field-container .btqc_submit, .mod_btquickcontact .btqc-field-container .btqc_next, .mod_btquickcontact .btqc-field-container .btqc_prev{
+	font-size:26px;
+}
+div.catItemHeader h3.catItemTitle, div.tagItemHeader h2.tagItemTitle, 
+div.userItemHeader h3.userItemTitle, div.latestItemHeader h2.latestItemTitle, 
+div.itemHeader h2.itemTitle,h2.itemListView {
+    font-size: 26px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
